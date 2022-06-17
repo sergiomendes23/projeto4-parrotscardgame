@@ -3,9 +3,12 @@
     background-color: #EEF9BF;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .topo {
-    background-color: black;
+    background-color: #EEF9BF;
     width: 100vw;
     height: 150px;
     display: flex;
@@ -17,4 +20,40 @@
     font-size: 56px;
     font-family: Roboto;
     font-weight: 700;
+}
+.card {
+    width: 117px;
+    height: 146px;
+    background-color: #A7E9AF;
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 35px;
+    margin-bottom: 35px;
+}
+.piriquito {
+    width: 100px;
+    height: 100px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 614px){
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+.nome {
+    font-size: 36px;
+    margin: 40px;
+}
+.cards {
+    flex-direction: column;
+}
 }
