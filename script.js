@@ -1,4 +1,4 @@
-let quantidadeDeCartas = Number(prompt('Com quantas cartas de 4 à 14 você quer jogar?'))
+let quantidadeDeCartas = Number(prompt('Bem vindo ao PARROT CARD GAME!\n \nCom quantas cartas de 4 à 14 você quer jogar?'))
 const cartas = ['bobross', 'explody', 'fiesta', 'metal', 'revertit', 'triplets', 'unicorn'];
 const joguinho = [];
 let cartasEmbaralhadas = [];
@@ -6,7 +6,7 @@ let quantidadeDeJogadas = 0;
 let cartaVirada = false;
 
 while (quantidadeDeCartas < 4 || quantidadeDeCartas > 14 || (quantidadeDeCartas % 2) === 1) {
-    quantidadeDeCartas = Number(prompt('Com quantas cartas de 4 à 14 você quer jogar?'))
+    quantidadeDeCartas
 }
 
 function iniciarJogo() {
@@ -84,8 +84,10 @@ function compararCartas (primeiraCarta, segundaCarta) {
 
 function fimDeJogo() {
     const jogadas = document.querySelectorAll(".virada");
-
-    if (jogadas.length/2 == quantidadeDeCartas) {
-        alert(`Você ganhou em ${quantidadeDeJogadas} jogadas!`)
-    }
+    setTimeout(function(){
+        if (jogadas.length/2 == quantidadeDeCartas) {
+            alert(`Parabéns!!! Você ganhou em ${quantidadeDeJogadas/2} jogadas.`)
+        }
+    }, 500);
+    
 }
