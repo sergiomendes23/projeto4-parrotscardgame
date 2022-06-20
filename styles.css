@@ -24,6 +24,25 @@
 .card {
     width: 117px;
     height: 146px;
+    margin-right: 35px;
+    margin-bottom: 35px;
+  
+}
+img {
+    width: 100px;
+    height: 100px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+
+}
+.frente {
+    width: 117px;
+    height: 146px;
     background-color: #A7E9AF;
     border: 1px solid #99CEA8;
     border-radius: 5px;
@@ -32,15 +51,29 @@
     justify-content: center;
     margin-right: 35px;
     margin-bottom: 35px;
+    position: absolute;
 }
-.piriquito {
-    width: 100px;
-    height: 100px;
-}
-.cards {
+.verso {
+    width: 117px;
+    height: 146px;
+    background-color: #A7E9AF;
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 35px;
+    margin-bottom: 35px;
+    position: relative;
+    backface-visibility: hidden;
 }
+.virada {
+    transform: rotateY(180deg);
+    transition: all .5s;
+    transform-style: preserve-3d;
+}
+
+
 @media (max-width: 614px){
 .container{
     display: flex;
